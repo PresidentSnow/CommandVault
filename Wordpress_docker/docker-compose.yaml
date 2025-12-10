@@ -26,13 +26,12 @@ services:
     ports:
       - "${WD_PORT}:80"
     environment:
-      WD_DB_HOST: ${WD_DB_HOST}
-      WD_DB_USER: ${WD_DB_USER}
-      WD_DB_PW: ${WD_DB_PW}
-      WD_DB_NAME: ${WD_DB_NAME}
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: ${WD_DB_USER}
+      WORDPRESS_DB_PASSWORD: ${WD_DB_PW}
+      WORDPRESS_DB_NAME: ${WD_DB_NAME}
     volumes:
       - ./wp-content:/var/www/html/wp-content
-      - ./wp-config:/var/www/html/wp-config
     user: "1001:1001"
     depends_on:
       - db

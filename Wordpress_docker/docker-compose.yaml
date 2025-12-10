@@ -1,4 +1,4 @@
-version: '3.8'
+#version: '3.8'
 
 services:
   db:
@@ -6,30 +6,35 @@ services:
     container_name: wp_db
     restart: unless-stopped
     environment:
-      MYSQL_ROOT_PASSWORD: root_password
-      MYSQL_DATABASE: wordpress
-      MYSQL_USER: wordpress
-      MYSQL_PASSWORD: wordpress_password
+      MYSQL_ROOT_PASSWORD: m1s3.Ql
+      MYSQL_DATABASE: wordpress_db
+      MYSQL_USER: wp_mysql
+      MYSQL_PASSWORD: w0.r3Us
     volumes:
       - db_data:/var/lib/mysql
     networks:
       - wp_network
 
   wordpress:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
+      labels:
+        - "description=WordPress for tests."
+    image: my-wordpress-local:v1
     container_name: wp_app
     restart: unless-stopped
     ports:
-      - "8082:80"
+      - "9000:80"
     environment:
       WORDPRESS_DB_HOST: db
-      WORDPRESS_DB_USER: wordpress
-      WORDPRESS_DB_PASSWORD: wordpress_password
-      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wp_mysql
+      WORDPRESS_DB_PASSWORD: w0.r3Us
+      WORDPRESS_DB_NAME: wordpress_db
     volumes:
       - ./wp-content:/var/www/html/wp-content
       - ./wp-config:/var/www/html/wp-config
-    user: "wpuser:wpuser"
+    user: "1001:1001"
     depends_on:
       - db
     networks:

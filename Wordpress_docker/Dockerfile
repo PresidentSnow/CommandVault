@@ -1,8 +1,8 @@
 FROM wordpress:latest
 
-ARG WP_UID=1002
-ARG WP_GID=1002
-ARG WP_USER=wordpress-app
+ARG WP_UID=115
+ARG WP_GID=115
+ARG WP_USER=wp_user
 
 # Install PHP extensions and other tools
 RUN apt-get update && apt-get install -y \

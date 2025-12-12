@@ -20,9 +20,9 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        WP_UID: ${WP_UID:-1002}
-        WP_GID: ${WP_GID:-1002}
-        WP_USER: ${WP_USER:-wordpress-app}
+        WP_UID: ${WP_UID:-115}
+        WP_GID: ${WP_GID:-115}
+        WP_USER: ${WP_USER:-wp_user}
       labels:
         - "description=WordPress for tests."
     container_name: wp_app

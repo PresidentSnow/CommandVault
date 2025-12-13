@@ -13,4 +13,12 @@ Wordpress_docker/wp-content/uploads/*
 Wordpress_docker/wp-content/backups/*
 Wordpress_docker/wp-content/cache/*
 
+!Wordpress_docker/wp-content/themes/*.gitkeep
+!Wordpress_docker/wp-content/languages/*.gitkeep
+!Wordpress_docker/wp-content/plugins/*.gitkeep
+!Wordpress_docker/wp-content/upgrade/*.gitkeep
+!Wordpress_docker/wp-content/uploads/*.gitkeep
+!Wordpress_docker/wp-content/backups/*.gitkeep
+!Wordpress_docker/wp-content/cache/*.gitkeep
+
 *.log

@@ -2,7 +2,9 @@
 Repo for manage the Docker images, containers and his environment.
 
 * Tips for docker containers:
-    - To create a non user without privileges, for specific service or docker container. You can run this command for create new user:
+    - Create docker users:
+    To create a non user without privileges, for specific service or
+    docker container. You can run this command for create new user:
 
         sudo adduser --system --uid 115 \
             --no-create-home \
@@ -55,4 +57,6 @@ Repo for manage the Docker images, containers and his environment.
 
         define('WPLANG', 'es_ES');
         
-        *IMPORTANT*: put this line BEFORE this line: /* That's all, stop editing! Happy publishing. */
+        *IMPORTANT*: put this line BEFORE this line: '/* That's all, stop editing! Happy publishing. */'
+
+* Container for Apache:

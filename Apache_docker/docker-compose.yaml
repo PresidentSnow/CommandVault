@@ -1,0 +1,27 @@
+#version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      labels:
+        - "description:Apache server for test"
+      container_name: "apache_server"
+      restart: unless-stopped
+      ports:
+        - ""
+      environment:
+        #
+      volumes:
+        - #
+        - #
+      depends_on:
+        - db
+      networks:
+        - wp_network
+      healthcheck:
+        test: ["CMD", "curl", "-f", "http://localhost/health"]
+        interval: 30s
+        timeout: 10s
+        retries: 5

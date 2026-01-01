@@ -1,27 +1,57 @@
 #version: '3.8'
 
 services:
+  db:
+    image: mysql:8.0
+    container_name: app_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PW}
+      MYSQL_DATABASE: ${MYSQL_DB}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PW}
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - web_network
+
   web:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        APACHE_UID: ${APACHE_UID:-118}
+        APACHE_GID: ${APACHE_GID:-118}
+        APACHE_USER: ${APACHE_USER:-apache_user}
       labels:
         - "description:Apache server for test"
-      container_name: "apache_server"
-      restart: unless-stopped
-      ports:
-        - ""
-      environment:
-        #
-      volumes:
-        - #
-        - #
-      depends_on:
-        - db
-      networks:
-        - wp_network
-      healthcheck:
-        test: ["CMD", "curl", "-f", "http://localhost/health"]
-        interval: 30s
-        timeout: 10s
-        retries: 5
+    container_name: "apache_server"
+    restart: unless-stopped
+    ports:
+      - "${APACHE_HTTP}:80"
+      - "${APACHE_HTTPS}:443"
+    environment:
+      APACHE_SERVER_NAME: localhost
+      APACHE_SERVER_ADMIN: admin@localhost
+    volumes:
+      - ./html:/var/www/html
+      - ./apache-config:/etc/apache2/sites-available
+      - ./logs:/var/log/apache2
+      - ./ssl:/etc/apache2/ssl
+    depends_on:
+      - db
+    networks:
+      - web_network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
+
+networks:
+  web_network:
+    driver: bridge
+
+volumes:
+  db_data:

@@ -1,0 +1,53 @@
+#version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: wp_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PW}
+      MYSQL_DATABASE: ${MYSQL_DB}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PW}
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - wp_network
+
+  wordpress:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        WP_UID: ${WP_UID:-115}
+        WP_GID: ${WP_GID:-115}
+        WP_USER: ${WP_USER:-wp_user}
+      labels:
+        - "description=WordPress for tests."
+    container_name: wp_app
+    restart: unless-stopped
+    ports:
+      - "${WD_PORT}:80"
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: ${WD_DB_USER}
+      WORDPRESS_DB_PASSWORD: ${WD_DB_PW}
+      WORDPRESS_DB_NAME: ${WD_DB_NAME}
+    volumes:
+      - ./wp-content:/var/www/html/wp-content
+      - ./wp-content/themes:/var/www/html/wp-content/themes:rw
+      - ./wp-content/plugins:/var/www/html/wp-content/plugins:rw
+      - ./wp-content/uploads:/var/www/html/wp-content/uploads:rw
+      - ./wp-content/languages:/var/www/html/wp-content/languages:rw
+    depends_on:
+      - db
+    networks:
+      - wp_network
+
+volumes:
+  db_data:
+
+networks:
+  wp_network:
+    driver: bridge

@@ -3,6 +3,7 @@ Repository for keep commands, config files, etc.
 
 - Content:
 
+    * Linux scripts for task automation
     * CSV files
     * Databases templates
-    * Linux scripts for task automation
+    * Docker environment

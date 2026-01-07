@@ -16,6 +16,13 @@ clear_terminal(){
   clear
 }
 
+osSystem=$(uname -s)
+
+if [[ "$osSystem" != "Linux" ]]; then
+    echo -e "ERROR: you are NOT in a Linux system.\n"
+    exit 1
+fi
+
 echo "Stopping and eliminating docker containers..."
 
 if command -v docker &> /dev/null; then

@@ -3,6 +3,13 @@
 set -e
 trap 'echo -e "\n ERROR!!!!: Check the steps for more details." >&2' ERR
 
+osSystem=$(uname -s)
+
+if [[ "$osSystem" != "Linux" ]]; then
+    echo -e "ERROR: you are NOT in a Linux system.\n"
+    exit 1
+fi
+
 if [ "$EUID" -ne 0 ]; then
     echo "You must be root to do this."
     exit 1

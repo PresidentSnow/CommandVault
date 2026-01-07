@@ -1,0 +1,3 @@
+/home/[user]/Desktop
+/home/[user]/Documents
+/home/[user]/Downloads

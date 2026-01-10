@@ -1,9 +1,9 @@
 # CommandVault
-Repository for keep commands, config files, etc.
 
-- Content:
+Repository for keep commands, config files, databases, etc.
 
-    * Linux scripts for task automation
-    * CSV files
-    * Databases templates
-    * Docker environment
+* Content:
+  * Linux scripts for task automation
+  * CSV files
+  * Databases templates
+  * Docker environment

@@ -6,33 +6,35 @@ ARG APACHE_USER=apache_user
 
 # Install Apache and essential tools
 RUN apt-get update && \
-    apt-get install -y \
+    apt-get install -y --no-install-recommends \
+        ca-certificates \
+        curl \
         apache2 \
         apache2-utils \
-        curl \
-        vim \
         libapache2-mod-php \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
         php \
-        php-cli \
         php-common \
         php-mysql \
-        php-gd \
         php-curl \
         php-mbstring \
         php-xml \
         php-zip \
-        php-json \
-    && apt-get clean \
+        php-gd \
+        php-cli \
     && rm -rf /var/lib/apt/lists/*
 
 # Create user
-RUN groupadd -g ${APACHE_GID} ${APACHE_USER} && \
-    useradd -u ${APACHE_UID} -g ${APACHE_GID} \
+RUN groupadd -r -g ${APACHE_GID} ${APACHE_USER} && \
+    useradd -r -u ${APACHE_UID} -g ${APACHE_GID} \
     -s /usr/sbin/nologin -M -d /nonexistent \
     ${APACHE_USER}
 
 # Enable Apache modules
-RUN a2enmod rewrite ssl headers deflate php8.3
+RUN a2enmod rewrite ssl headers deflate
 
 # Create directory for SSL certificates
 RUN mkdir -p /etc/apache2/ssl && \
@@ -51,11 +53,6 @@ RUN chmod -R 755 /var/www/html && \
     find /var/www/html -type d -exec chmod 755 {} \; && \
     find /var/www/html -type f -exec chmod 644 {} \;
 
-# Monitoring
-HEALTHCHECK --interval=30s --timeout=3s --start-period=30s --retries=3 \
-    CMD curl -f http://localhost || exit 1
-
-USER ${APACHE_USER}
 WORKDIR /var/www/html
 EXPOSE 80 443
 

@@ -31,8 +31,8 @@ services:
       - "${APACHE_HTTP}:80"
       - "${APACHE_HTTPS}:443"
     environment:
-      APACHE_SERVER_NAME: localhost
-      APACHE_SERVER_ADMIN: admin@localhost
+      APACHE_SERVER_NAME: ${SERVER_NAME:-localhost}
+      APACHE_SERVER_ADMIN: ${SERVER_ADMIN:-admin@localhost}
     volumes:
       - ./html:/var/www/html
       - ./apache-config:/etc/apache2/sites-available
@@ -43,11 +43,11 @@ services:
     networks:
       - web_network
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost/health"]
+      test: ["CMD", "curl", "-f", "http://localhost"]
       interval: 30s
       timeout: 10s
-      retries: 5
-      start_period: 40s
+      retries: 3
+      start_period: 60s
 
 networks:
   web_network:

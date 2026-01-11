@@ -21,4 +21,13 @@ Wordpress_docker/wp-content/cache/*
 !Wordpress_docker/wp-content/backups/*.gitkeep
 !Wordpress_docker/wp-content/cache/*.gitkeep
 
+# Logs
+logs/
 *.log
+
+# ssl
+ssl/*.key
+ssl/*.pem
+ssl/*.crt
+ssl/*.cert
+!ssl/*.gitkeep

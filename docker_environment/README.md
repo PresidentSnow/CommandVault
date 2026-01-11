@@ -74,3 +74,15 @@ Repo for manage the Docker images, containers and his environment.
     *IMPORTANT*: put this line BEFORE this line: '/*That's all, stop editing! Happy publishing.*/'
 
 ## Container for Apache
+
+* Steps for create SSL certificate:
+
+    1. cd ssl (if the 'ssl' folder doesn't exist, create it)
+
+    2. openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
+        -keyout server.key -out server.crt \
+        -subj "/C=EN/ST=London/L=London/O=Test/CN=localhost"
+
+    3. chmod 644 server.crt && chmod 600 server.key
+
+    *pd*: the 'C=', 'ST=', 'L=', 'O=' and 'CN=' values can be whatever you want.

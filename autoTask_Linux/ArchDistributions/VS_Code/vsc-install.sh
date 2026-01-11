@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # VS Code installation automation on
-# Arch and Arch-based systems systems
+# Arch and Arch-based systems
 
 set -e
 trap 'echo -e "\n ERROR!!!!: Check the steps for more details." >&2' ERR

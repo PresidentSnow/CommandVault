@@ -1,23 +1,35 @@
-node_modules/
-vendor/
-packages/
-bower_components/
+wp-content/
+backups/
 
 .git
 .gitignore
-.svn/
-.hg/
-.gitmodules
-
+.dockerignore
 .vscode
 
-.env
+.env*
 .env.local
+.env.example
 *.key
 *.pem
+*.cert
+*.crt
 
 *.log
 logs/
 tmp/
 temp/
 *.pid
+
+*.txt
+*.md
+README*
+
+*.sql
+*.zip
+*.tar.gz
+*.backup
+
+docker-compose.yaml
+docker-compose.yml
+Dockerfile
+.dockerignore

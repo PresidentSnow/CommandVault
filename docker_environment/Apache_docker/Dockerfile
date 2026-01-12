@@ -12,7 +12,7 @@ RUN apt-get update && \
         apache2 \
         apache2-utils \
         libapache2-mod-php \
-    && rm -rf /var/lib/apt/lists/*
+        rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
@@ -25,26 +25,21 @@ RUN apt-get update && \
         php-zip \
         php-gd \
         php-cli \
-    && rm -rf /var/lib/apt/lists/*
+        rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Create user
 RUN groupadd -r -g ${APACHE_GID} ${APACHE_USER} && \
     useradd -r -u ${APACHE_UID} -g ${APACHE_GID} \
     -s /usr/sbin/nologin -M -d /nonexistent \
-    ${APACHE_USER}
-
-# Enable Apache modules
-RUN a2enmod rewrite ssl headers deflate
-
-# Create directory for SSL certificates
-RUN mkdir -p /etc/apache2/ssl && \
+    ${APACHE_USER} && \
+    a2enmod rewrite ssl headers deflate expires && \
+    mkdir -p /etc/apache2/ssl && \
     chown -R ${APACHE_USER}:${APACHE_USER} /etc/apache2/ssl
 
 # Configure apache user for use the new user
 RUN echo "export APACHE_RUN_USER=${APACHE_USER}" >> /etc/apache2/envvars && \
     echo "export APACHE_RUN_GROUP=${APACHE_USER}" >> /etc/apache2/envvars
 
-# Copy web content
 COPY ./html/ /var/www/html/
 
 # Set proper permissions
@@ -55,5 +50,4 @@ RUN chmod -R 755 /var/www/html && \
 
 WORKDIR /var/www/html
 EXPOSE 80 443
-
 CMD ["apachectl", "-D", "FOREGROUND"]

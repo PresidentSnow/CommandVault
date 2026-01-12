@@ -1,23 +1,39 @@
+html/
+apache-config/
+logs/
+ssl/
+
 node_modules/
-vendor/
-packages/
-bower_components/
 
 .git
 .gitignore
+.gitmodules
+.git-*
 .svn/
 .hg/
-.gitmodules
 
 .vscode
 
-.env
+.env*
 .env.local
+.env.example
 *.key
 *.pem
+*.crt
+*.cert
 
 *.log
 logs/
 tmp/
 temp/
 *.pid
+
+*.txt
+*.md
+README*
+LICENSE*
+
+docker-compose.yaml
+docker-compose.yml
+Dockerfile
+.dockerignore

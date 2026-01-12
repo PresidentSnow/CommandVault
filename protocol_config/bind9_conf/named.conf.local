@@ -1,0 +1,9 @@
+zone "localclass.sri" {
+    type master;
+    file "/etc/bind/db.localclass.sri";
+};
+
+zone "10.168.192.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.10.168.192";
+};

@@ -1,0 +1,20 @@
+$TTL 43200      ; 12 hours
+@       IN      SOA     ns1.localclass.sri. admin.localclass.sri. (
+                        2024111401      ; Serial
+                        18000           ; Refresh 5 horas (18000)
+                        1800            ; Retry 30 minutos (1800)
+                        2592000         ; Expire 1 mes (2592000)
+                        43200           ; Negative cache TTL 12 horas
+                        )
+
+; Name services
+@       IN      NS      ns1.localclass.sri.
+@       IN      NS      ns2.localclass.sri.
+
+254     IN      PTR     mail.localclass.sri.
+253     IN      PTR     mail2.localclass.sri.
+
+; Full reverse
+254     IN      PTR     ns1.localclass.sri.
+254     IN      PTR     localclass.sri.
+254     IN      PTR     www.localclass.sri.

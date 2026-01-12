@@ -1,0 +1,13 @@
+options {
+	directory "/var/cache/bind";
+
+	forwarders {
+		1.0.0.1; // Cloudflare
+		//8.8.8.8; Google
+	};
+
+	dnssec-validation no;
+	listen-on { 192.168.10.254; };
+	listen-on-v6 { none; };
+	allow-query { any; };
+};

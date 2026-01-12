@@ -1,0 +1,30 @@
+$TTL 43200	; 12 hours
+@	IN	SOA	ns1.localclass.sri. admin.localclass.sri. (
+			2024111401	; Serial
+			18000		; Refresh 5 hours (18000)
+			1800		; Retry 30 minutes (1800)
+			2592000		; Expire 1 month (2592000)
+			43200		; Negative cache TTL 12 horas
+			)
+
+; Name services
+@	IN	NS	ns1.localclass.sri.
+@	IN	NS	ns2.localclass.sri.
+
+; A record
+@	IN	A	192.168.10.254
+ns1	IN	A	192.168.10.254
+ns2	IN	A	192.168.10.254
+www	IN	A	192.168.10.254
+mail	IN	A	192.168.10.254
+mail2	IN	A	192.168.10.254
+
+; Alias (CNAME)
+ftp	IN	CNAME	www
+smtp	IN	CNAME	mail
+imap	IN	CNAME	mail
+pop	IN	CNAME	mail
+
+; Mail servers (MX)
+@	IN	MX	10 mail
+@	IN	MX	20 mail2

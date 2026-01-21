@@ -23,6 +23,6 @@ if [[ "$osSystem" != "Linux" ]]; then
     exit 1
 fi
 
-echo "Desinstalando VSC en Arch..."
+echo "Uninstalling VSC on Arch..."
 sudo pacman -R visual-studio-code-bin
-echo -e "Proceso completado correctamente!!\n"
+echo -e "Process completed successfully!!\n"

@@ -28,5 +28,4 @@ if [ "$EUID" -ne 0 ]; then
     exit 1
 fi
 
-sudo pacman -R docker
-sudo pacman -R docker compose
+sudo pacman -R docker docker compose

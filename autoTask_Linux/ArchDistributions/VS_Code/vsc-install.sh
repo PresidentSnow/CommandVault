@@ -29,19 +29,18 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 echo "Update and upgrade the package in the system."
-sudo pacman -Syu --noconfirm
+sudo pacman -Syu
 echo "Packages have been updated successfully!!"
 
 clear_terminal
 
-# git and base-devel install
 echo "Installing git y base-devel..."
-sudo pacman -S --needed base-devel git --noconfirm
+sudo pacman -S --needed base-devel git
 echo "Process completed!!"
 
 # VS Code install
 echo "Installing vs code using 'yay'..."
-yay -S visual-studio-code-bin --noconfirm
+yay -S visual-studio-code-bin
 echo " "
 
 echo "Everything completed successfully!!"

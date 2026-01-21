@@ -27,22 +27,20 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 echo "Update and upgrade the package in the system..."
-sudo pacman -Syu --noconfirm
+sudo pacman -Syu
 echo "Packages have been updated succesfully!!"
 
 clear_terminal
 
 echo "Installing Docker and Docker Compose..."
-sudo pacman -S docker 
-sudo pacman -S docker-compose
-echo "Docker and docker compose have been installed succesfully!!"
+sudo pacman -S docker docker-compose
+echo "\nDocker and docker compose have been installed succesfully!!"
 
 clear_terminal
 
 echo "Enabling docker service..."
 sudo systemctl enable --now docker.service
 
-# Verificar las instalaciones
 echo -e "\nDocker installed:"
 docker --version
 

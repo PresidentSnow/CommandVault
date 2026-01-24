@@ -28,8 +28,3 @@ README*
 *.zip
 *.tar.gz
 *.backup
-
-docker-compose.yaml
-docker-compose.yml
-Dockerfile
-.dockerignore

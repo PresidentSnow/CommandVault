@@ -1,4 +1,4 @@
-# Install sshd on Windows 10
+# Install sshd on Windows and Windows Server
 
 Add-WindowsCapability -Online -Name OpenSSH.Server
 

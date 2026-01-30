@@ -9,12 +9,10 @@ Write-Output "Downloading Python installer..."
 Invoke-WebRequest -Uri $pythonInstallerUrl -OutFile $installerPath
 Write-Output "Python installer downloaded to $installerPath"
 
-# Run the installer silently
 Write-Output "Running the Python installer..."
 Start-Process -FilePath $installerPath -ArgumentList "/quiet InstallAllUsers=1 PrependPath=0" -NoNewWindow -Wait
 Write-Output "Python installation completed"
 
-# Define the Python installation path
 $pythonInstallPath = "C:\Program Files\Python312"
 Write-Output "Python installation path: $pythonInstallPath"
 

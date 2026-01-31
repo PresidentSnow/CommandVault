@@ -23,6 +23,23 @@ Repo for manage the Docker images, containers and his environment.
 
     *pd*: use the same UID and GID inside and outside of docker container
 
+  * Create backup of docker containers:
+    Steps for save the data from docker containers with mysqldump.
+
+    1. Run the 'sudo docker compose up -d' command if you don't have started the containers yet.
+
+    2. Run the following commands for save all data:
+
+        * Use this command if you want to save all data:
+
+            * docker exec [db_container] mysqldump -u root -p"${MYSQL_ROOT_PWD}" --all-databases > backup.sql
+
+        * Or use this command if you just want to save a specific database:
+
+            * docker exec [db_container] mysqldump -u ${MYSQL_USERD} -p"${MYSQL_PWD}" ${MYSQL_DBD} > my_db.sql
+
+    3. And that's all. You can now either stop the containers or continue with your work.
+
 ## Container for Wordpress
 
 * If there's problem with this:

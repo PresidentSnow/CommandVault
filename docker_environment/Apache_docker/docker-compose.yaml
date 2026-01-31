@@ -2,13 +2,13 @@
 
 services:
   db:
-    image: mysql:8.0
+    image: mysql:8.4
     container_name: app_db
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PWD}
-      MYSQL_DATABASE: ${MYSQL_DBD}
-      MYSQL_USER: ${MYSQL_USERD}
+      MYSQL_DATABASE: ${MYSQL_DB}
+      MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PWD}
     volumes:
       - db_data:/var/lib/mysql
@@ -49,9 +49,28 @@ services:
       retries: 3
       start_period: 60s
 
+  phpmyadmin:
+    image: phpmyadmin:5.2.3
+    container_name: app_phpmyadmin
+    restart: unless-stopped
+    ports:
+      - "${PORT_MYADMIN}:80"
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 0
+      UPLOAD_LIMIT: 100M
+    depends_on:
+      - db
+    networks:
+      - web_network
+    volumes:
+      - phpmyadmin_sessions:/sessions
+
 networks:
   web_network:
     driver: bridge
 
 volumes:
   db_data:
+  phpmyadmin_sessions:

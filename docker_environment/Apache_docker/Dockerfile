@@ -4,7 +4,6 @@ ARG APACHE_UID=118
 ARG APACHE_GID=118
 ARG APACHE_USER=apache_user
 
-# Install Apache and essential tools
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         ca-certificates \

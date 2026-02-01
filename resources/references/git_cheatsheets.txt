@@ -1,0 +1,9 @@
+- Original date: 2025/09/27
+
+* https://learngitbranching.js.org/?locale=es_ES
+
+* https://www.w3schools.com/git/default.asp
+
+* https://git-scm.com/docs/gittutorial
+
+* https://learn.microsoft.com/en-us/training/modules/intro-to-git/

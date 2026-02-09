@@ -9,6 +9,10 @@
 # refactor: - Restructuring code without changing its functionality
 # test: - Adding or modifying tests
 # chore: - Maintenance tasks (updating dependencies, configurations)
+# perf: - Performance improvements
+# ci: - Continuous integration related
+# build: - Changes that affect the build system or external dependencies
+# revert: - Reverts a previous commit
 
 # * Specific for classes/learning:
 # class: - Class code/course exercise

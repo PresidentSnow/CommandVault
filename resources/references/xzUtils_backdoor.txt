@@ -18,6 +18,12 @@ Backdoor xz utils information:
 
     - https://boehs.org/node/everything-i-know-about-the-xz-backdoor
 
+    - https://research.swtch.com/xz-timeline
+
+    - https://x.com/fr0gger_/status/1774342248437813525
+
+    - https://gynvael.coldwind.pl/?lang=en&id=782
+
 * Andres Freund discover backdoor (2024/03/29) and explain
 
     - https://www.openwall.com/lists/oss-security/2024/03/29/4

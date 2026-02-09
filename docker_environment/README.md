@@ -57,7 +57,7 @@ Repo for manage the Docker images, containers and his environment.
     3. apt-get update && apt-get install -y wget
 
     4. cd /tmp
-    5. wget https://wordpress.org/latest.tar.gz
+    5. wget ```https://wordpress.org/latest.tar.gz```
 
     6. tar -xzf latest.tar.gz
 
@@ -75,7 +75,7 @@ Repo for manage the Docker images, containers and his environment.
 
     3. After that, enter in to the folder and execute this:
 
-        wget https://downloads.wordpress.org/translation/core/5.9/es_ES.zip
+        wget ```https://downloads.wordpress.org/translation/core/5.9/es_ES.zip```
 
         Change the '5.9' for whichever version you want or 'es_ES' for whichever language you want.
 

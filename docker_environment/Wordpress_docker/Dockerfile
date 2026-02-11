@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
     curl \
     wget \
     less \
+    zip \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get clean
 
@@ -28,8 +29,8 @@ RUN mkdir -p /var/www/html/wp-content/uploads \
     /var/www/html/wp-content/languages \
     /var/www/html/wp-content/backups && \
     chown -R ${WP_USER}:${WP_USER} /var/www/html && \
-    chmod 755 /var/www/html && \
-    find /var/www/html -type d -exec chmod 755 {} \; && \
+    chmod 775 /var/www/html && \
+    find /var/www/html -type d -exec chmod 775 {} \; && \
     find /var/www/html -type f -exec chmod 644 {} \;
 
 # Specific permissions

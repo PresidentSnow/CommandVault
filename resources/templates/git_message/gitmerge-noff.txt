@@ -1,0 +1,8 @@
+merge: <branch-name> into <target-branch>
+
+- Purpose: (Why merge this branch?)
+- Key Changes: (Brief summary of the key points of what the branch brings)
+- Related Issues: (Issues from GitHub)
+- Validations: (What test were performed?)
+- Branch: (<branch-name> -> <target-branch>)
+- Date: (2023/03/12)

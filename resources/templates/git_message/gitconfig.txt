@@ -1,0 +1,24 @@
+-Original date: 2026/02/02
+
+* Git config template:
+
+user.name=[name]
+user.email= [gmail]
+core.editor=[editor]
+init.defaultbranch=[main]
+alias.st=status
+alias.lg=log
+alias.ci=commit
+alias.br=branch
+alias.sw=switch
+color.ui=true
+
+* To set up this, execute:
+
+    - git config --global (or local) user.name [name]
+
+    - git config --local alias.ci commit
+
+* For undo one of them:
+
+    - git config --unset alias.ci (for example)

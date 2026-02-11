@@ -1,0 +1,37 @@
+- Original date: 2025/05/27
+
+Here’s the translation of your structure into English:
+
+# --------- NOTES [course number] Course [course_num] ---------
+
+Teachers:
+  Subjects:
+
+--- # Indicates the start of a new document within the file
+
+Students:
+  - id: 
+    Last_Name_First_Name:
+    Alias (aka):
+    Phone:
+    Age:
+
+--- # Indicates the start of a new document within the file
+
+First_Term:
+  Subjects:
+
+--- # Indicates the start of a new document within the file
+
+Second_Term:
+  Subjects:
+
+--- # Indicates the start of a new document within the file
+
+Third_Term:
+  Subjects:
+
+--- # Indicates the start of a new document within the file
+
+Final_Grades:
+  Subjects:

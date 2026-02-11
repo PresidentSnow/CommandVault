@@ -1,0 +1,306 @@
+- Original date: 2025/11/9
+
+Linux command list:
+
+A
+	alias
+	aria2
+	apt (Advanced Package Tool)
+	arp
+	at
+	awk (Aho, Weinberger, Kernighan)
+	assetfinder
+
+B
+	basename
+	bash
+	blkid (Block ID)
+	bmon
+	bg (Background)
+	bunzip2
+	bzip2
+	bwm-ng
+
+C
+	cal (Calendar)
+	cat (Concatenate)
+	cd (Change Directory)
+	cfdisk
+	cp (Copy)
+	crontab (cron table)
+	cut
+	cups (Common Unix Printing System)
+	change
+	chattr (Change Attributes)
+	chmod (Change mode)
+	chown (Change owner)
+	chgrp (Change group)
+	chvt (Change Virtual Terminal)
+	curl
+
+D
+	date
+	declare
+	dbus (Desktop Bus)
+	df (Disk Free)
+	dig (Domain Information Groper)
+	diff
+	du (Disk Usage)
+	dumpe2fs
+	dmidecode
+	dmesg (Diagnostic Message)
+	dnf (Dandified YUM)
+	dpkg (Debian Package)
+	dhcclient
+
+E
+	e2fsck
+	echo
+	emacs
+	env
+	ethtool
+	export
+
+F
+	fc (Fix Command)
+	fdisk (Fixed Disk)
+	fsck (File System Consistency Check)
+	firewalld-cmd
+	find
+	finger
+	file
+	free
+	fg (Foreground)
+	fuser	
+
+G
+	getent (Get Entries)
+	getfacl (Get file access control list)
+	gpasswd
+	grep (Global Regular Expression Print)
+	groupadd
+	groupdel
+	groups
+	groupmod
+	gunzip
+	gzip (GNU Zip)
+	ghidra
+
+H
+	history
+	head
+	htop (Hardware top)
+	host
+	hostnamectl
+	hping
+	hwinfo (Hardware Information)
+	hydra
+
+I
+	iostat (I/O statistics)
+	id
+	ip
+	iperf
+	iptables
+	iptraf-ng
+	ifconfig
+	ifup
+	ifquery
+	ifdown
+	iftop	
+	iw
+	iwconfig
+
+J
+	jobs
+	journalctl (Journal Control)
+
+K
+	kill
+	killall
+
+L
+	last
+	lastb
+	lastlog
+	les
+	ln (Link)
+	ls (list)
+	lsattr (List Attributes)
+	lsblk (List Block Devices)
+	lscpu (List CPU)
+	lsof (List Open Files)
+	lspci (List PCI)
+	lsusb (List USB)
+	lshw (List Hardware)
+	lsscsi (List SCSI)
+	locate
+	localectl (Local Control)
+	logger (Log Message)
+	logrotate (Log Rotate)
+	lvcreate
+	lvdisplay
+	lvextend
+	lvs
+
+M
+	man
+	mail
+	mdadm (multiple device administers or manages)
+	metalog
+	more
+	mount
+	mpstat (Monitor per-processor statistics)
+	mv (Move)
+	mkdir (Make Directory)
+	mkfs (Make filesystem)
+	mtr
+
+N
+	nano
+	namei (Name Interpreter/Inspect)
+	nc (Netcat)
+	netplan
+	netstat
+	nethogs
+	net-tools
+	newgrp
+	nslookup
+	nice
+	nmap
+	nmcli (NetworkManager)
+	nmtui (NetworkManager TUI)
+	nl (Number Lines of Files)
+
+O
+	od (Octal Dump)
+
+P
+	pacman
+	parted
+	passwd
+	paste
+	pgrep (Process grep)
+	ping
+	printenv
+	ps (Process Status)
+	pkill
+	pvcreate
+	pvs
+	pvscan
+	pvdisplay
+	pwd (Print Working Directory)
+	p7zip
+	pmap
+
+Q
+
+
+R
+	read
+	rev
+	resize2fs
+	rsyslogd (Remote Syslog Daemon)
+	route
+	rm (Remove)
+	rmdir (Remove Directory)
+	renice
+	resolvectl
+
+S
+	sar
+	scp (Securely Copy Files)
+	screen
+	sed (Stream Editor)
+	set
+	setfacl (Set file access control list)
+	seq
+	sftp
+	ssh (Secure Shell
+	smokeping
+	snap
+	sort
+	socat
+	source
+	stat
+	speedometer
+	speedtest-cli
+	ss
+	su
+	sudo
+	systemctl
+	syslogd (System Log Daemon)
+	syslog-ng (system log - next generation)
+	sqlmap
+
+T
+	tac
+	tar (Tape Archive)
+	tail
+	tcpdump (TCP Dump)
+	tee
+	tmux
+	top
+	touch
+	tr (Translate)
+	tree
+	traceroute
+	tracepath
+	timedatectl (Time Data Control)
+	type
+	tune2fs
+
+U
+	udev (User Device)
+	umask
+	umount (Un mount)
+	uname (Unix Name)
+	uniq
+	unxz
+	unzip
+	updatedb
+	uptime
+	useradd
+	userdel
+	usermod
+	utmpdump
+	ufw (Uncomplicated Firewall)
+
+V
+	vgcreate
+	vgdisplay
+	vgextend
+	vgs
+	vi
+	vim (Enhanced version)
+	visudo
+	vmstat (Virtual Memory Statistic Reporter)
+
+W
+	wait
+	watch
+	wc (Word Count)
+	wget
+	whereis
+	which
+	whois
+	w
+
+X
+	xargs
+	xattr (Extended Attributes)
+	xkill
+	xz
+
+Y
+	yum (Yellowdog Updater, Modified)
+
+Z
+	zip
+
+7
+	7z
+
+Command history. Añadir este apartado.
+Command variable. "	"	" (And IFS "Internal Field Separator")
+Commands daemons (cron, syslog, 

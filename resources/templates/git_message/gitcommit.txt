@@ -13,6 +13,7 @@
 # ci: - Continuous integration related
 # build: - Changes that affect the build system or external dependencies
 # revert: - Reverts a previous commit
+# templates: - templates for git, terminals, yaml files, etc
 
 # * Specific for classes/learning:
 # class: - Class code/course exercise

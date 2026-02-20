@@ -11,6 +11,8 @@ alias.lg=log
 alias.ci=commit
 alias.br=branch
 alias.sw=switch
+alias.p=push
+alias.m=merge
 color.ui=true
 
 * To set up this, execute:

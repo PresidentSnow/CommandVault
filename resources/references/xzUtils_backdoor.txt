@@ -34,6 +34,8 @@ Backdoor xz utils information:
 
     - https://github.com/smx-smx/xzre
 
+    - https://github.com/amlweems/xzbot
+
 * SSH honeypot with XZ backdoor
 
     - https://github.com/lockness-Ko/xz-vulnerable-honeypot
@@ -41,3 +43,8 @@ Backdoor xz utils information:
 * Akamai info
 
     - https://www.akamai.com/blog/security-research/critical-linux-backdoor-xz-utils-discovered-what-to-know
+    
+* XZ Utils from Debian package
+
+    - https://snapshot.debian.org/package/xz-utils/5.6.1-1/
+   

@@ -8,7 +8,7 @@
 # style: - Formatting changes (spaces, semicolons, etc.) without affecting logic
 # refactor: - Restructuring code without changing its functionality
 # test: - Adding or modifying tests
-# chore: - Maintenance tasks (updating dependencies, configurations)
+# chore: - Maintenance tasks (updating dependencies, configurations) or reorganize folder structure
 # perf: - Performance improvements
 # ci: - Continuous integration related
 # build: - Changes that affect the build system or external dependencies
@@ -21,6 +21,7 @@
 # example: - Demonstrative example
 # practice: - Personal practice
 # wip: (Work in Progress) - Incomplete partial changes
+# rename: change files name
 
 <type>: <description>
 

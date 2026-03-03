@@ -1,6 +1,6 @@
 merge: <branch-name> into <target-branch>
 
-- Purpose: (Why merge this branch?)
+- Purpose: Unify the changes from the <branch-name> branch into <target-branch> branch.
 - Key Changes: (Brief summary of the key points of what the branch brings)
 - Related Issues: (Issues from GitHub)
 - Validations: (What test were performed?)

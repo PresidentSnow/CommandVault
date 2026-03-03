@@ -2,27 +2,9 @@
 
 Backdoor xz utils information:
 
-* Other analysis, but mutch deeper. With code, environment, compilation, etc.
-
-    - https://medium.com/@knownsec404team/analysis-of-the-xz-utils-backdoor-code-d2d5316ac43f
-
-* More information about the backdoor, but instead in GitHub.
-
-    - https://gist.github.com/thesamesam/223949d5a074ebc3dce9ee78baad9e27
-
 * Jia Tan commit payload
 
     - https://github.com/tukaani-project/xz/commit/cf44e4b7f5dfdbf8c78aef377c10f71e274f63c0
-
-* Information about the timeline of backdoor, code analysis and the discovery.
-
-    - https://boehs.org/node/everything-i-know-about-the-xz-backdoor
-
-    - https://research.swtch.com/xz-timeline
-
-    - https://x.com/fr0gger_/status/1774342248437813525
-
-    - https://gynvael.coldwind.pl/?lang=en&id=782
 
 * Andres Freund discover backdoor (2024/03/29) and explain
 
@@ -36,6 +18,8 @@ Backdoor xz utils information:
 
     - https://github.com/amlweems/xzbot
 
+    - https://gist.github.com/thesamesam/223949d5a074ebc3dce9ee78baad9e27
+
 * SSH honeypot with XZ backdoor
 
     - https://github.com/lockness-Ko/xz-vulnerable-honeypot
@@ -47,4 +31,21 @@ Backdoor xz utils information:
 * XZ Utils from Debian package
 
     - https://snapshot.debian.org/package/xz-utils/5.6.1-1/
-   
+
+* XZ Utils timeline attack
+
+    - https://research.swtch.com/xz-timeline
+
+    - https://boehs.org/node/everything-i-know-about-the-xz-backdoor
+
+    - https://x.com/fr0gger_/status/1774342248437813525
+
+* XZ Utils cyberattack debate
+
+    - https://lcamtuf.substack.com/p/technologist-vs-spy-the-xz-backdoor
+
+* Code analysis of the XZ Utils cyberattack
+
+    - https://gynvael.coldwind.pl/?lang=en&id=782
+
+    https://medium.com/@knownsec404team/analysis-of-the-xz-utils-backdoor-code-d2d5316ac43f

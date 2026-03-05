@@ -23,7 +23,7 @@ echo " " > $OCTETS.txt
 
 # Loop
 for ip in {1..254}; do
-  ping -c 1 $OCTETS.$ip | grep "64 bytes" | cut -d " " -f 4 | tr -d ":" >> $OCTETS.txt &
+    ping -c 1 $OCTETS.$ip | grep "64 bytes" | cut -d " " -f 4 | tr -d ":" >> $OCTETS.txt &
 done
 
 # Show octets file

@@ -7,7 +7,7 @@ set -e
 trap 'echo -e "\n ERROR!!!!: Check the steps for more details." >&2' ERR
 
 clear_terminal(){
-        echo -n "The terminal will be cleared in: "
+    echo -n "The terminal will be cleared in: "
     for i in {1..10}; do
         echo -n "${i} "
         sleep 2

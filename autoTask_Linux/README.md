@@ -12,6 +12,10 @@ Folder for store the scripts for automate tasks in GNU/Linux systems.
   * Docker and docker compose, it's installation and uninstallation.
   * VS Code, it's installation and uninstallation.
 
+* Fedora-based distributions:
+  * Docker and docker compose, it's installation and uninstallation.
+  * VS Code, it's installation and uninstallation.
+
 ## Ops toolkits
 
 * Backups

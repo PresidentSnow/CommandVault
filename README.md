@@ -7,8 +7,18 @@ Repository for keep commands, config files, databases, etc.
 
 * Content:
   * Scripts automation Linux
+
   * CSV files
+
   * Databases templates
+
   * Docker environment
+
   * Protocol configuration files
+
+  * resources
+    * cheatsheets
+    * references
+    * templates
+
   * Scripts automation Windows with PowerShell

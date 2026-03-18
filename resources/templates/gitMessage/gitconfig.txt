@@ -9,6 +9,7 @@ alias.br=branch
 alias.p=push
 alias.st=status
 alias.m=merge
+alias.lg=log
 init.defaultbranch=main
 user.name=[user]
 user.email=[name]@gmail.com

@@ -1,0 +1,5 @@
+git branch (br) -a
+
+git push origin -d [remote_branch]
+
+git pull origin [branch_name]

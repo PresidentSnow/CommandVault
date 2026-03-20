@@ -2,17 +2,19 @@
 
 Folder for SQL databases templates.
 
-* DBMS types:
-  * MySQL
-  * OracleSQL
-  * PostgreSQL
-  * SQL Server
-  * SQLite
+## DBMS types
 
-* Data bases types:
-  * Gravity
-  * Movies
-  * Olympics
-  * Superheroes
-  * University
-  * Videogames
+* MySQL
+* OracleSQL
+* PostgreSQL
+* SQL Server
+* SQLite
+
+## Data base types
+
+* Gravity
+* Movies
+* Olympics
+* Superheroes
+* University
+* Videogames

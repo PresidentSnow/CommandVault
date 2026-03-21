@@ -2,6 +2,8 @@
 
 - irm https://get.activated.win | iex
 
+- oobe\bypassnro (bypass net check)
+
 - https://www.shellhacks.com/clear-history-powershell/
 
 * Generic keys:

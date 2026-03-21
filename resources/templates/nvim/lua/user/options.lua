@@ -32,8 +32,9 @@ opt.clipboard = "unnamedplus"
 opt.confirm = true
 opt.spell = true
 opt.history = 20
+opt.updatetime = 270
 
--- Wildmenu 
+-- Wildmenu (autocomplete)
 vim.o.wildmenu = true
 vim.o.wildmode = "list:longest"
 vim.o.wildignore = "*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx"

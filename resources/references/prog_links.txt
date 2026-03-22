@@ -1,9 +1,0 @@
-- Original date: 2025/09/22
-
-* Assembly source:
-
-    - https://github.com/search?q=assembly+language%3AAssembly&type=repositories&l=Assembly
-
-* PHP source:
-
-    - https://www.php.cn/

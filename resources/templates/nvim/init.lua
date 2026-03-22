@@ -11,4 +11,5 @@
 -- Charge modules
 require('user.options')
 require('user.keymaps')
-require('user.ui')
+require('user.statusline')
+require('user.autocmds')

@@ -9,6 +9,7 @@ opt.relativenumber = false
 
 -- Indentation
 opt.tabstop = 4
+opt.softtabstop = 4
 opt.shiftwidth = 4
 opt.expandtab = true
 opt.smartindent = true
@@ -29,11 +30,13 @@ opt.showmatch = true
 -- General
 opt.mouse = ""
 opt.clipboard = "unnamedplus"
+opt.completeopt = {'menu', 'menuone', 'noselect'}
 opt.confirm = true
 opt.spell = true
 opt.history = 20
+opt.updatetime = 270
 
--- Wildmenu 
+-- Wildmenu (autocomplete)
 vim.o.wildmenu = true
 vim.o.wildmode = "list:longest"
 vim.o.wildignore = "*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx"

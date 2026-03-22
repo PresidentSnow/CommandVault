@@ -14,6 +14,8 @@ init.defaultbranch=main
 user.name=[user]
 user.email=[name]@gmail.com
 core.editor=code --wait
+alias.df=diff
+alias.stx=stash
 
 * To set up this, execute:
 

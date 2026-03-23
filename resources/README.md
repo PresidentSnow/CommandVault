@@ -34,22 +34,19 @@ grep "git switch" cheatsheets/git_commands.txt
 
 Curated collection of external resources, research links, and cybersecurity materials.
 
-### Categories
+### **cybersec**
 
-  **1. Git learning resources:**
+- Cybersecurity terms.
+- Cybersecurity tools list.
+- TSB tools.
+- XZ utils backdoor links and information.
+- Programming bus.
 
-- Git cheatsheets links.
+### **tool_tutorials**
 
-  **2. Cybersecurity research:**
+- Git commands, tutorials and labs.
 
-- XZ backdoor incident.
-- The Shadow Brokers group.
-- Cybersecurity tools.
-
-  **3. Programming links:**
-
-- Programming bugs.
-- Assembly docs.
+- Programming links for practice.
 
 ## **Templates**
 
@@ -57,9 +54,13 @@ Reusable templates for configuration files, commit meesage, and documentation.
 
 ### File types
 
-- **Git commit templates** - Standardized commit message formats.
+- **Git message templates** - Standardized git message formats.
 
 - **YAML configuration** - For Docker or orchestration tools.
+
+- **Neovim** - Neovim config files
+
+- **Vim** - Vim config file
 
 ### Usage_templates
 

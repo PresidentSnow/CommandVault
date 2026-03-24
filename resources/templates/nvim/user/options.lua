@@ -1,6 +1,6 @@
 local opt = vim.opt
 
--- Codex 
+-- Encoding 
 opt.encoding = "utf8"
 
 -- Line number 
@@ -43,3 +43,4 @@ vim.o.wildignore = "*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xls
 
 -- Syntax highlighting
 vim.cmd("syntax on")
+--opt.colorscheme

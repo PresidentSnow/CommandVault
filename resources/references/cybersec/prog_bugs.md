@@ -1,6 +1,6 @@
-# Memory bugs
+# PROGRAMMING BUGS
 
-* Original date: 2025/12/26
+* **ORIGINAL DATE:** 2025/12/26
 
 ## The most common
 

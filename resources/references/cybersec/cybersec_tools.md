@@ -1,6 +1,6 @@
-# Cybersecurity tools
+# CYBERSECURITY TOOLS
 
-* Original date: 2025/09/23
+* **ORIGINAL DATE:** 2025/09/23
 
 ## Tools
 

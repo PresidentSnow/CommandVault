@@ -1,6 +1,6 @@
-# TSB tools from GitHub
+# TSB TOOLS
 
-* Original date: 2025/11/9
+* **ORIGINAL DATE:** 2025/11/9
 
 ## EternalBlue
 

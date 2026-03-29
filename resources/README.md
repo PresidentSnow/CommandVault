@@ -1,69 +1,64 @@
-# Resources
+# RESOURCES
 
-This folder contains supplementary materials (commands list), references, and templates that support the command line tools and scripts in this repository.
+* This folder contains supplementary materials (commands list), references, templates, etc.
 
-## Structure
+## **STRUCTURE**
 
 ```bash
 resources/
 ├── cheatsheets/
+├── protocol_config/
 ├── references/
 └── templates/
 ```
 
-## **Cheatsheets**
+## **PROTOCOL CONFIG**
 
-Quick-reference guides for various cmd tools and systems.
+* Configuration file protocols.
 
-### Contents
+### PROTOCOLS
 
-- **Linux/Unix commands** - System administration and shell commands.
-- **Git operations** - Branching, merging, rebasing, and other workflows.
-- **Windows activation keys** - Set of keys for activated Windows.
-- **Networking commands** - Set of network commands for operating systems like Linux/Unix and Windows.
+* DHCP (isc-dhcp-server)
+* DNS (bind9)
+* FTP (vsftpd)
 
-### Usage
+## **CHEATSHEETS**
 
-```bash
-cat cheatsheets/sorted_linuxCommands.txt
+* Quick-reference guides for various cmd tools and systems.
 
-grep "git switch" cheatsheets/git_commands.txt
-```
+  * **git_md** - Git commands.
+  * **linux_cmd** - Linux, network commands and awk functions.
+  * **win_cmd** - Windows keys for activation and ps1 commands.
 
-## References
+## **REFERENCES**
 
-Curated collection of external resources, research links, and cybersecurity materials.
+* Curated collection of external resources, research links, and cybersecurity materials.
 
-### **cybersec**
+### CVE
 
-- Cybersecurity terms.
-- Cybersecurity tools list.
-- TSB tools.
-- XZ utils backdoor links and information.
-- Programming bus.
+* CVE-2017-0144
+* CVE-2017-0145
+* CVE-2024-3094
+* CVE-2026-1764
 
-### **tool_tutorials**
+### CYBERSEC
 
-- Git commands, tutorials and labs.
+* Cybersecurity terms.
+* Cybersecurity tools list.
+* TSB tools.
+* Programming bus.
 
-- Programming links for practice.
+### TOOL_TUTORIALS
 
-## **Templates**
+* Git commands, tutorials and labs.
 
-Reusable templates for configuration files, commit meesage, and documentation.
+* Programming links for practice.
 
-### File types
+## **TEMPLATES**
 
-- **Git message templates** - Standardized git message formats.
+* Reusable templates for configuration files, commit meesage, and documentation.
 
-- **YAML configuration** - For Docker or orchestration tools.
-
-- **Neovim** - Neovim config files
-
-- **Vim** - Vim config file
-
-### Usage_templates
-
-```bash
-cp resources/templates/docker-compose.yaml my-docker_compose.yaml
-```
+  * **Alacritty configuration** - Capuccini alacritty configuration.
+  * **Git message templates** - Standardized git message formats.
+  * **Neovim** - Neovim config files
+  * **Vim** - Vim config file

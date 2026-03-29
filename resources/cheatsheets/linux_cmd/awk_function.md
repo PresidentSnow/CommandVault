@@ -1,7 +1,7 @@
 # AWK BUILT-IN FUNCTIONS
 
 * **INFO:** [GNU ORG](https://www.gnu.org/software/gawk/manual/html_node/Built_002din.html)
-* **ORIGINAL DATE:** 2025/06/23
+* **ORIGINAL TIME:** 2025/06/23
 
 ## NUMERIC FUNCTIONS
 
@@ -180,6 +180,8 @@
 
 * "rshift(val, count)":
 
+* "ishift":
+
 * "xor(v1, v2[, ...])":
 
   * **EXAMPLES:**
@@ -227,6 +229,12 @@ $ gawk -f testbits.awk
 * "isarray(x)": return a true value if 'x' is an array. Otherwise, return false.
 
 * "typeof(x)": return one of the following string, depending upon the type of 'x': array, regexp, number, number|bool, string, strnum, unassigned and untyped.
+
+## NETWORK FUNCTIONS
+
+* **INFO:** [GNU ORG](https://www.gnu.org/software/gawk/manual/gawkinet/html_node/)
+
+* "net-type":
 
 ## OTHER FUNCTIONS
 

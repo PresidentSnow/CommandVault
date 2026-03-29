@@ -1,4 +1,4 @@
-# Code obfuscation techniques
+# CODE OBFUSCATION TECHNIQUES
 
 * **Control Flow Flattening:** change the code flow execution.
   * Tools: OLLVM, VMProtect, Themida

@@ -8,8 +8,7 @@
 --"                 ╚═══╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
 --"               
 --"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
--- Charge modules
-require('user.options')
-require('user.keymaps')
-require('user.statusline')
-require('user.autocmds')
+
+-- INFO: https://monsterlessons-academy.com/posts/neovim-complete-setup-setting-up-neovim-from-scratch
+require('janedoe.core')
+require('janedoe.lazy')

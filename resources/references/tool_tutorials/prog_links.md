@@ -1,6 +1,6 @@
 # Links for programming language
 
-* Original date: 2025/09/22
+* **ORIGINAL DATE:** 2025/09/22
 
 ## Assembly source
 

@@ -1,0 +1,132 @@
+# LINUX NETWORK COMMANDS
+
+* **ORIGINAL DATE**: 2025/09/22
+
+## A
+
+* aria2
+* arp
+* arpwatch
+
+## B
+
+* bmon
+* bwm-ng
+
+## C
+
+* curl
+
+## D
+
+* darkstat
+* dhclient
+* dig
+* dstat
+
+## E
+
+* ethtool
+
+## G
+
+* gated
+
+## H
+
+* host
+* hping
+
+## I
+
+* ibmonitor
+* ifconfig
+* ifdown
+* ifplugstatus
+* ifrename
+* ifstat
+* iftop
+* ifup
+* ip
+* iperf3
+* ipmaddr
+* iproute2
+* iptables
+* IPTraf
+* iptunnel
+* iputils
+* iw
+* iwconfig
+
+## M
+
+* mii-tool
+* mtr (my traceroute)
+
+## N
+
+* nameif
+* ncat
+* nc (NetCat)
+* netcat
+* nethogs
+* netperf
+* netplan
+* netstat
+* net-tools (pack of commands)
+* netwatch
+* ngrep
+* nload
+* nmap
+* nmcli
+* nmtui
+* nslookup
+
+## P
+
+* ping
+* plipconfig
+
+## R
+
+* rarp
+* route
+
+## S
+
+* slattach
+* slurm
+* smokeping
+* snort
+* socat
+* speedometer
+* speedtest-cli
+* ss
+* ssh
+
+## T
+
+* tcpdump
+* traceroute
+
+## U
+
+* ufw
+
+## W
+
+* websocat
+* wget
+* whois
+* Wireless Tools for Linux
+* wireshark
+
+## Source of information
+
+* [linuxblog](https://linuxblog.io/linux-networking-commands-scripts/)
+
+## Package utilities
+
+* Net-tools: arp, hostname, ifconfig, netstat, rarp, route, plipconfig, slattach, mii-tool, iptunnel and ipmaddr.
+
+* Wireless tools: iwconfig, iwlist, iwspy, iwpriv and ifrename.

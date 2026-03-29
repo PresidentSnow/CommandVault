@@ -1,6 +1,6 @@
 # Git tutoriales and commands
 
-* Original date: 2025/09/27
+* **ORIGINAL DATE:** 2025/09/27
 
 * [learngitbranching](https://learngitbranching.js.org/?locale=es_ES)
 

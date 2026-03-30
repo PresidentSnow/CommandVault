@@ -2,12 +2,16 @@
 local opt = vim.opt
 local general = vim.o
 local map = vim.g
+local cmd = vim.cmd
 
 --[[
 ============================================================================
 GENERAL OPTIONS
 ============================================================================
 ]]
+
+-- encoding
+opt.encoding = "utf-8"
 
 -- line number
 opt.number = true
@@ -39,6 +43,8 @@ map.maplocalleader = ""
 -- general
 general.mouse= ""
 general.clipboard = "unnamedplus"
+opt.syntax = "enable"
+-- cmd("Syntax on")
 
 --[[
 ============================================================================
@@ -49,11 +55,11 @@ TEMPORARY FILES
 opt.swapfile = false
 opt.backup = false
 opt.writebackup = false
-opt.undofile = true
+opt.undofile = false
 
-opt.directory = "~/.cache/nvim/swap//"
-opt.backupdir = "~/.cache/nvim/backup//"
-opt.undodir = "~/.cache/nvim/undo//"
+-- opt.directory = "~/.cache/nvim/swap//"
+-- opt.backupdir = "~/.cache/nvim/backup//"
+-- opt.undodir = "~/.cache/nvim/undo//"
 
 -- Automatic read/write
 opt.autoread = true

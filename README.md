@@ -2,8 +2,8 @@
 
 Repository for keep commands, config files, databases, etc.
 
-* Created in 2025-04-26
-* Added to GitHub in 2026-01-03
+* **ORIGINAL TIME:** 2025/04/26
+* **IN GITHUB:** 2026/01/03
 
 ## Content
 
@@ -14,8 +14,6 @@ Repository for keep commands, config files, databases, etc.
 * Databases templates
 
 * Docker environment
-
-* Protocol configuration files
 
 * resources
   * cheatsheets

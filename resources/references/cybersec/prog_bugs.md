@@ -2,7 +2,7 @@
 
 * **ORIGINAL DATE:** 2025/12/26
 
-## The most common
+## THE MOST COMMON
 
 * Buffer overflow
 * Buffer underflow
@@ -10,7 +10,7 @@
 * Double Free
 * Memory Leak
 
-## Concurrency bugs
+## CONCURRENCY BUGS
 
 * Time Of Check, Time Of Use (TOCTOU)
 * Race condition
@@ -18,21 +18,21 @@
 * Livelock
 * Data race
 
-## Logical bugs
+## LOGICAL BUGS
 
 * Off by one
 * Invalid state not contemplated
 
-## Initialization bugs
+## INITIALIZATION BUGS
 
 * Uninitialized variable
 
-## Resource bugs
+## RESOURCE BUGS
 
 * File descriptor leak
 * Use of resources in the wrong context
 
-## Special bugs
+## SPECIAL BUGS
 
 * Heisenbugs
 * Bugs by UB (Undefined behavior)

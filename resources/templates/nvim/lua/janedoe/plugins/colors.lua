@@ -1,3 +1,4 @@
+-- gruvbox
 return {
   -- ellisonleao --
   "ellisonleao/gruvbox.nvim",

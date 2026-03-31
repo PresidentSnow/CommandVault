@@ -46,6 +46,10 @@ general.clipboard = "unnamedplus"
 opt.syntax = "enable"
 -- cmd("Syntax on")
 
+-- Decrease update time
+general.updatetime = 250
+general.timeoutlen = 300
+
 --[[
 ============================================================================
 TEMPORARY FILES

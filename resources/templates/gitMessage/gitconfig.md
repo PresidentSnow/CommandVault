@@ -1,0 +1,30 @@
+# GIT CONFIG
+
+* **ORIGINAL TIME:** 2026/02/02
+
+* color.ui=true
+* alias.sw=switch
+* alias.ci=commit
+* alias.br=branch
+* alias.p=push
+* alias.st=status
+* alias.m=merge
+* alias.lg=log
+* init.defaultbranch=main
+* user.name=[user]
+* user.email=[name]@gmail.com
+* core.editor=code --wait
+* alias.df=diff
+* alias.stx=stash
+
+## To set up this, execute
+
+* git config --global core.editor "code --wait"
+
+* git config --local alias.ci commit
+
+* git config --system alias.sw switch
+
+## For undo one of them
+
+* git config --unset alias.ci (for example)

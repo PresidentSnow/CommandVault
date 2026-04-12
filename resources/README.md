@@ -7,20 +7,10 @@
 ```bash
 resources/
 ├── cheatsheets/
-├── protocol_config/
+├── protocol_conf/
 ├── references/
 └── templates/
 ```
-
-## **PROTOCOL CONFIG**
-
-* Configuration file protocols.
-
-### PROTOCOLS
-
-* DHCP (isc-dhcp-server)
-* DNS (bind9)
-* FTP (vsftpd)
 
 ## **CHEATSHEETS**
 

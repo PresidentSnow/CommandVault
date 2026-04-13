@@ -12,4 +12,3 @@ nnoremap <F8> :terminal<CR>
 tnoremap <C-F8> <C-\><C-n>:bd!<CR>
 " Show spaces and tabs with Ctrl  + l/L
 " nnoremap <C-l> :set list!<CR>
-

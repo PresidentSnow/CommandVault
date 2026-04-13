@@ -12,8 +12,22 @@ Repository for keep commands, config files, databases, etc.
 * CSV files
 
 * Databases templates
+  * MySQL
+  * OracleSQL
+  * PostgreSQL
+  * SQLserver
+  * SQLite
+
+* Protocol_conf
+  * DHCP (isc-dhcp-server)
+  * DNS (bind9)
+  * FTP (vsftpd)
+  * SSH (openssh)
 
 * Docker environment
+  * Apache
+  * MySQL
+  * Wordpress
 
 * resources
   * cheatsheets

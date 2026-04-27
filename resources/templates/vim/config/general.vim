@@ -28,7 +28,7 @@ set incsearch
 set smartcase
 set showmatch
 
-" Activate 'CursorHold' after 300 ms of activity
+" Activate 'CursorHold' after 280 ms of activity
 set updatetime=280
 
 " Highlighted words that match

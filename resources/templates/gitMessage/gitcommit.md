@@ -19,6 +19,7 @@
 * revert: - Reverts a previous commit
 * templates: - templates for git, terminals, yaml files, etc
 * deleted:
+* done:
 * renowned and stylized:
 
 ## Specific for classes/learning
@@ -33,7 +34,7 @@
 * Template:
 
 ```bash
-<type>: <description>
+<type><matter>: <description>
 
 - Subject: Web application implementation.
 - Topic:
@@ -41,4 +42,5 @@
 - Branch:
 - Date: (2026/01/31)
 - Changes: the following changes were made:
+    1.
 ```

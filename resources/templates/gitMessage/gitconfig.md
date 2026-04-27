@@ -16,6 +16,7 @@
 * core.editor=code --wait
 * alias.df=diff
 * alias.stx=stash
+* alias.rb=rebase
 
 ## To set up this, execute
 

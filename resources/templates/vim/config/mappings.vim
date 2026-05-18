@@ -3,7 +3,8 @@
 " ============================================================================
 
 " Show lines with Ctrl + s/S
-nnoremap <C-s> :echo line('$') . " lines"<CR>
+" nnoremap <C-s> :echo line('$') . " lines"<CR>
+nnoremap <C-s> :w<CR>:echo " Changes saved"<CR>
 " Execute the script F5
 nnoremap <F5> :w<CR>:!chmod +x % && ./%<CR>
 " Open and terminal F8
@@ -18,3 +19,4 @@ tnoremap <C-F8> <C-\><C-n>:bd!<CR>
 " ============================================================================
 
 nnoremap <C-b> :NERDTreeToggle<CR>
+

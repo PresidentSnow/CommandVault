@@ -8,7 +8,7 @@
 
 * git stash (stx) list: list the modifications stashed.
 * git stash (stx) show: inspects the modifications stashed.
-  * git stash (stx) show -u | --include-untracked | --only-untracked
+* git stash (stx) show -u | --include-untracked | --only-untracked
 
 ## Remove/delete and clean
 

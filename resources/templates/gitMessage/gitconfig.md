@@ -17,6 +17,8 @@
 * alias.df=diff
 * alias.stx=stash
 * alias.rb=rebase
+* alias.rs=reset
+* alias.cfg=config
 
 ## To set up this, execute
 

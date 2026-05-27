@@ -5,6 +5,9 @@
 " Encoding
 set encoding=utf8
 
+" History
+set viminfo=
+
 " Line number
 set number
 set norelativenumber
@@ -39,7 +42,8 @@ autocmd CursorMoved * silent! match non
 set mouse=
 set clipboard=unnamedplus
 set confirm
-set spell
+set nospell
+" set spell spelllang=en,es
 set history=20
 
 " Wildmenu
@@ -65,4 +69,3 @@ set noswapfile
 set nobackup
 set nowritebackup
 set noundofile
-

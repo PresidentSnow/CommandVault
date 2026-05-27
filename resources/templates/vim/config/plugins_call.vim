@@ -16,4 +16,3 @@ Plug 'kien/rainbow_parentheses.vim'
 Plug 'preservim/nerdtree'
 
 call plug#end()
-

@@ -1,0 +1,136 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"
+"               ██╗   ██╗██╗███╗   ███╗██████╗  ██████╗
+"               ██║   ██║██║████╗ ████║██╔══██╗██╔════╝
+"               ██║   ██║██║██╔████╔██║██████╔╝██║     
+"               ╚██╗ ██╔╝██║██║╚██╔╝██║██╔══██╗██║     
+"                ╚████╔╝ ██║██║ ╚═╝ ██║██║  ██║╚██████╗
+"                 ╚═══╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
+"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ============================================================================
+" GENERAL OPTIONS
+" ============================================================================
+
+" Encoding
+set encoding=utf8
+
+" History
+set viminfo=
+
+" Line number
+set number
+set norelativenumber
+
+" Indentation
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+
+" Visual
+set wrap
+set cursorline
+set cursorcolumn
+set termguicolors
+
+" Search
+set ignorecase
+set hlsearch
+set incsearch
+set smartcase
+set showmatch
+
+" Activate 'CursorHold' after 300 ms of activity
+set updatetime=280
+
+" Highlighted words that match
+autocmd CursorHold * silent! exe 'match Search /\V\<'.escape(expand('<cword>'), '\').'\>/'
+autocmd CursorMoved * silent! match non
+
+" General
+set mouse=
+set clipboard=unnamedplus
+set confirm
+set nospell
+" set spell spelllang=en,es
+set history=20
+
+" Wildmenu
+set wildmenu
+set wildmode=list:longest
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+
+" Show spaces and tabs
+"set list
+"set listchars=tab:>-,space:·
+
+" FOLDING
+
+set foldenable
+set foldmethod=manual
+" The smaller the number, the more folded the file will be
+set foldlevel=1
+set foldnestmax=10
+
+" TEMPORARY FILES
+
+set noswapfile
+set nobackup
+set nowritebackup
+set noundofile
+
+" ============================================================================
+" MAPPINGS
+" ============================================================================
+
+" Show lines with Ctrl + s/S
+" nnoremap <C-s> :echo line('$') . " lines"<CR>
+nnoremap <C-s> :w<CR>:echo " Changes saved"<CR>
+" Execute the script F5
+nnoremap <F5> :w<CR>:!chmod +x % && ./%<CR>
+" Open and terminal F8
+nnoremap <F8> :terminal<CR>
+" Close terminal Ctrl + F8
+tnoremap <C-F8> <C-\><C-n>:bd!<CR>
+" Show spaces and tabs with Ctrl  + l/L
+" nnoremap <C-l> :set list!<CR>
+
+" ============================================================================
+" NERDTREE
+" ============================================================================
+
+nnoremap <C-b> :NERDTreeToggle<CR>
+
+" ============================================================================
+" STATUSLINE
+" ============================================================================
+
+" Clear the previous 'statusline' conf.
+set statusline=
+set laststatus=2
+
+" Function to get UTC time
+function! UTCOffset()
+    " %z return +0200, -0430, etc.
+    let r = strftime("%z")
+    " Convert '+0200' into '+2'; '-0430' into '-4.5'.
+    let h = str2nr(r[0:2])
+    let m = str2nr(r[3:4])
+    return m == 0
+        \ ? printf("UTC%+d", h)
+        \ : printf("UTC%+g", h + m / 60.0)
+endfunction
+
+" File information
+set statusline+=%t\ %M\ %Y\ %R
+"set statusline+=\ %{strftime('%H:%M')}
+set statusline+=\[%{&fileencoding}:%{&fileformat}]\ %p%%
+"set statusline+=\ mode:\ %{mode()}
+
+" Separator, align to the right
+set statusline+=%=
+
+" Position system
+set statusline+=ASCII:\ %b\ hex:\ 0x%B\ %L\|%l\/%c
+set statusline+=\ %{UTCOffset()}\ %{strftime('%H:%M')}

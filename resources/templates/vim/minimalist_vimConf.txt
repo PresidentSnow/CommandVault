@@ -29,6 +29,7 @@ set expandtab
 set smartindent
 
 " Visual
+syntax on
 set wrap
 set cursorline
 set cursorcolumn

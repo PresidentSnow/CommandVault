@@ -30,7 +30,7 @@ source ~/.vim/config/mappings.vim
 " ============================================================================
 " COLORS
 " ============================================================================
-syntax enable
+syntax on
 " Syntax highlighting and color
 "colorscheme catppuccin
 " This scheme is for VM
@@ -46,4 +46,3 @@ source ~/.vim/config/plugins_call.vim
 " ============================================================================
 
 source ~/.vim/config/plugins_conf.vim
-

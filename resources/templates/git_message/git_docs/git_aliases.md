@@ -1,6 +1,6 @@
 # GIT CONFIG
 
-* **ORIGINAL TIME:** 2026/02/02
+* **ORIGINAL DATE:** 2026/02/02
 
 * color.ui=true
 * alias.sw=switch

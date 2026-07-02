@@ -31,3 +31,5 @@
 ## For undo one of them
 
 * git config --unset alias.ci (for example)
+
+* git config --global --unset alias.co

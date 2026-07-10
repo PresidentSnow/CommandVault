@@ -21,7 +21,9 @@ fi
 declare -A aliases=(
   [br]="branch"
   [cfg]="config"
+  [ci]="commit"
   [cl]="clone"
+  [co]="checkout"
   [df]="diff"
   [ft]="fetch"
   [lg]="log"
@@ -29,11 +31,14 @@ declare -A aliases=(
   [pl]="pull"
   [p]="push"
   [rb]="rebase"
+  [rmt]="remote"
   [rs]="reset"
   [rt]="restore"
   [rv]="revert"
+  [st]="status"
   [stx]="stash"
   [sw]="switch"
+  [tg]="tag"
 )
 
 for k in "${!aliases[@]}"; do

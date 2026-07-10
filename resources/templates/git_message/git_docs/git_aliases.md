@@ -2,23 +2,31 @@
 
 * **ORIGINAL DATE:** 2026/02/02
 
-* color.ui=true
-* alias.sw=switch
-* alias.ci=commit
-* alias.br=branch
-* alias.p=push
-* alias.st=status
-* alias.m=merge
 * alias.lg=log
-* init.defaultbranch=main
-* user.name=[user]
-* user.email=[name]@gmail.com
-* core.editor=code --wait
 * alias.df=diff
-* alias.stx=stash
-* alias.rb=rebase
+* alias.ft=fetch
+* alias.p=push
+* alias.tg=tag
+* alias.m=merge
+* alias.sw=switch
+* alias.pl=pull
+* alias.ci=commit
+* alias.cl=clone
+* alias.rv=revert
+* alias.rt=restore
 * alias.rs=reset
+* alias.rb=rebase
+* alias.rmt=remote
+* alias.stx=stash
 * alias.cfg=config
+* alias.br=branch
+* alias.st=status
+* alias.co=checkout
+* user.name=[username]
+* user.mail=[mail]@gmail.com
+* core.editor=code
+* init.defaultbranch=main
+* color.ui=true
 
 ## To set up this, execute
 

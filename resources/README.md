@@ -56,6 +56,6 @@ cve_linux/
 * Reusable templates for configuration files, commit meesage, and documentation.
 
   * **Alacritty configuration** - Capuccini alacritty configuration.
-  * **Git message templates** - Standardized git message formats.
+  * **Git message** - Standardized git message formats.
   * **Neovim** - Neovim config files
   * **Vim** - Vim config file

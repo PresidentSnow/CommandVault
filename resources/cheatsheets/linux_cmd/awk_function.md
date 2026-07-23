@@ -1,7 +1,7 @@
 # AWK BUILT-IN FUNCTIONS
 
 * **INFO:** [GNU ORG](https://www.gnu.org/software/gawk/manual/html_node/Built_002din.html)
-* **ORIGINAL TIME:** 2025/06/23
+* **ORIGINAL DATE:** 2025/06/23
 
 ## NUMERIC FUNCTIONS
 

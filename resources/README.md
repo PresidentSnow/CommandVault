@@ -7,7 +7,6 @@
 ```bash
 resources/
 ├── cheatsheets/
-├── protocol_conf/
 ├── references/
 └── templates/
 ```
@@ -26,22 +25,30 @@ resources/
 
 ### CVE
 
-* CVE-2017-0144
-* CVE-2017-0145
-* CVE-2024-3094
-* CVE-2026-1764
+```bash
+cve_windows/
+├── CVE-2017-0144
+└── CVE-2017-0145
+
+cve_linux/
+├── CVE-2022-0847
+├── CVE-2016-5195
+├── CVE-2026-43284
+├── CVE-2026-31431
+└── CVE-2024-3094
+```
 
 ### CYBERSEC
 
 * Cybersecurity terms.
-* Cybersecurity tools list.
+* Cybersecurity tools list (Red and Blue team).
 * TSB tools.
-* Programming bus.
+* Programming bugs.
+* VeraCrypt information.
 
 ### TOOL_TUTORIALS
 
 * Git commands, tutorials and labs.
-
 * Programming links for practice.
 
 ## **TEMPLATES**

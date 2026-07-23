@@ -1,6 +1,6 @@
 # WINDOWS COMMANDS FOR INSTALL AND ACTIVATE
 
-* **ORIGINAL TIME:** 2025/06/11
+* **ORIGINAL DATE:** 2025/06/11
 
 * Activate Windows: ```irm https://get.activated.win | iex```
 

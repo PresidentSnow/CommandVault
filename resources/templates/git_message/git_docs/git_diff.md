@@ -21,3 +21,8 @@
 * git diff -- path/to/file
 * git diff --staged -- path/to/file
 * git diff HEAD -- /path/to/file
+
+## VIEW HOW MANY LINES WERE ADDED OR REMOVED
+
+* git diff --stat HEAD mail.cpp
+* git diff --numstat HEAD main.cpp (shows number of added and deleted lines in decimal notation)

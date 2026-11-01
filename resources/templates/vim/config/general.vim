@@ -7,6 +7,7 @@ set encoding=utf8
 
 " History
 set viminfo=
+set viminfofile=NONE
 
 " Line number
 set number

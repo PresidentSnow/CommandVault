@@ -2,9 +2,13 @@
 
 * **ORIGINAL DATE:** 2025/11/05
 
+---
+
 ## 7
 
 * 7z
+
+---
 
 ## A
 
@@ -28,6 +32,8 @@
 * automake
 * awk (Aho, Weinberger, Kernighan)
 
+---
+
 ## B
 
 * badblocks
@@ -44,6 +50,8 @@
 * bunzip2
 * bwm-ng
 * bzip2
+
+---
 
 ## C
 
@@ -80,6 +88,8 @@
 * curl
 * cut
 
+---
+
 ## D
 
 * dash (Debian Almquist Shell)
@@ -110,6 +120,8 @@
 * du (Disk Usage)
 * dumpe2fs
 
+---
+
 ## E
 
 * e2fsck
@@ -129,6 +141,8 @@
 * export
 * expr
 
+---
+
 ## F
 
 * factor
@@ -145,6 +159,8 @@
 * fstrim
 * ftp
 * fuser
+
+---
 
 ## G
 
@@ -171,6 +187,8 @@
 * gunzip
 * gzip (GNU Zip)
 
+---
+
 ## H
 
 * hdparm
@@ -183,6 +201,8 @@
 * htop
 * hwinfo (Hardware Information)
 * hydra
+
+---
 
 ## I
 
@@ -210,11 +230,15 @@
 * iw
 * iwconfig
 
+---
+
 ## J
 
 * jobs
 * journalctl (Journal Control)
 * jq
+
+---
 
 ## K
 
@@ -225,6 +249,8 @@
 * kmod
 * kpatch
 * ksymoops
+
+---
 
 ## L
 
@@ -273,6 +299,8 @@
 * lzma
 * lzop
 
+---
+
 ## M
 
 * mail
@@ -305,6 +333,8 @@
 * mtr
 * mv (Move)
 
+---
+
 ## N
 
 * namei (Name Interpreter/Inspect)
@@ -334,12 +364,16 @@
 * nslookup
 * numactl
 
+---
+
 ## O
 
 * objcopy
 * objdump
 * od (Octal Dump)
 * openssl
+
+---
 
 ## P
 
@@ -377,11 +411,15 @@
 * pwd (Print Working Directory)
 * pwdx
 
+---
+
 ## Q
 
 * quota
 * quotacheck
 * quotactl
+
+---
 
 ## R
 
@@ -417,6 +455,8 @@
 * runlevel
 * run-parts
 * rustc
+
+---
 
 ## S
 
@@ -472,6 +512,8 @@
 * systemd-analyze
 * systemd-resolve
 
+---
+
 ## T
 
 * tabs
@@ -506,6 +548,8 @@
 * tune2fs
 * type
 
+---
+
 ## U
 
 * udev (User Device)
@@ -531,6 +575,8 @@
 * utmpdump
 * uuencode/uudecode
 
+---
+
 ## V
 
 * v4l2-ctl
@@ -544,6 +590,8 @@
 * vi/vim (Enhanced version)
 * vmstat (Virtual Memory Statistic Reporter)
 * vmtouch
+
+---
 
 ## W
 
@@ -564,6 +612,8 @@
 * wipefs
 * wodim
 
+---
+
 ## X
 
 * x86_64
@@ -581,11 +631,15 @@
 * xz
 * xzdec
 
+---
+
 ## Y
 
 * yacc
 * yes
 * yum (Yellowdog Updater, Modified)
+
+---
 
 ## Z
 

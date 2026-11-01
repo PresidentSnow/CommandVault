@@ -26,6 +26,8 @@ CASCADE OPTION          | ORDER OF ENCRYPTION             | KEY SIZES   |
 * Much 'stronger': AES-Twofish-Serpent
 * Security over speed: Serpent-Twofish-AES
 
+---
+
 ## ENCRYPT FILE
 
 ```bash
@@ -45,6 +47,8 @@ veracrypt --text \
 # --encryption AES-Twofish-Serpent
 ```
 
+---
+
 ## MOUNT VOLUME
 
 * Execute 'sudo mkdir /media/[example_name]
@@ -55,6 +59,8 @@ veracrypt --text \
     --keyfiles= \
     --verbose \
     --protect-hiddne no (if it's not hidden)
+
+---
 
 ## DISMOUNT VOLUME
 

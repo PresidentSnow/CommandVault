@@ -33,6 +33,8 @@
 
 * "tan(x)": return the tangent of 'x'.
 
+---
+
 ## I/O FUNCTIONS
 
 * **INFO:** [GNU ORG](https://www.gnu.org/software/gawk/manual/html_node/I_002fO-Functions.html)
@@ -54,6 +56,8 @@
 
 * "systime(command)": execute the operating system command 'command' and then return to the awk program.
 
+---
+
 ## TIME FUNCTIONS
 
 * **INFO:** [GNU ORG](https://www.gnu.org/software/gawk/manual/html_node/Time-Functions.html)
@@ -63,6 +67,8 @@
 * "strftime([format[, timestamp[, utc-flag]]])": Format the time specified by 'timestamp' based on the contents of the 'format' string and return the result. It is similar to the function of the same name in ISO C. If 'utc-flag' is present and is either nonzero or non-null, the value is formatted as UTC. Otherwise, the value is formatted for the local time zone. The 'timestamp' is in the same format as the value returned by the 'systime()' function. If no 'timestamp' argument is supplied, gawk uses the current time of day as the timestamp. Without a 'format' argument, 'strftime()' uses the value of "PROCINFO["strftime"] as the format string. The default string value is '%a %b %e %H:%M:%S %Z %Y"'. Also can assign a new value to 'PROCINFO["strftime"]'.
 
 * "systime()": this returns the currently time in seconds since 1970-01-01 00:00:00.
+
+---
 
 ## ARRAY FUNCTIONS
 
@@ -84,6 +90,8 @@
     * 2: Numeric order ascendant.
     * 3: Lexicographic order descendant.
     * 4: Numeric order descendant.
+
+---
 
 ## STRING FUNCTIONS
 
@@ -166,6 +174,8 @@
 
 * "toupper(string)":
 
+---
+
 ## BITWISE FUNCTIONS
 
 * **INFO:** [GNU ORG](https://www.gnu.org/software/gawk/manual/html_node/Bitwise-Functions.html)
@@ -224,17 +234,23 @@ $ gawk -f testbits.awk
 -| rshift(0x99, 2) = 0x26 = 00100110
 ```
 
+---
+
 ## GETTING TYPE INFORMATION FUNCTIONS
 
 * "isarray(x)": return a true value if 'x' is an array. Otherwise, return false.
 
 * "typeof(x)": return one of the following string, depending upon the type of 'x': array, regexp, number, number|bool, string, strnum, unassigned and untyped.
 
+---
+
 ## NETWORK FUNCTIONS
 
 * **INFO:** [GNU ORG](https://www.gnu.org/software/gawk/manual/gawkinet/html_node/)
 
 * "net-type":
+
+---
 
 ## OTHER FUNCTIONS
 

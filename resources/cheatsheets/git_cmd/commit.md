@@ -4,6 +4,8 @@
 
 * git help commit
 
+---
+
 ## Options
 
 * git commit (ci) -m | --message ""

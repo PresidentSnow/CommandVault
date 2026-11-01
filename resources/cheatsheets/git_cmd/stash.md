@@ -4,11 +4,15 @@
 
 * git help stash
 
+---
+
 ## List and show
 
 * git stash (stx) list: list the modifications stashed.
 * git stash (stx) show: inspects the modifications stashed.
 * git stash (stx) show -u | --include-untracked | --only-untracked
+
+---
 
 ## Remove/delete and clean
 
@@ -16,12 +20,16 @@
   * git stash (stx) drop -q | --quiet
 * git stash (stx) clear: clear all modifications stashed.
 
+---
+
 ## Apply and extract
 
 * git stash (stx) pop
   * git stash (stx) pop -q | --quiet
 * git stash (stx) apply
   * git stash (stx) apply -q | --quiet
+
+---
 
 ## Save changes
 

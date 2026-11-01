@@ -8,14 +8,20 @@
 * arp
 * arpwatch
 
+---
+
 ## B
 
 * bmon
 * bwm-ng
 
+---
+
 ## C
 
 * curl
+
+---
 
 ## D
 
@@ -24,18 +30,26 @@
 * dig
 * dstat
 
+---
+
 ## E
 
 * ethtool
+
+---
 
 ## G
 
 * gated
 
+---
+
 ## H
 
 * host
 * hping
+
+---
 
 ## I
 
@@ -58,10 +72,14 @@
 * iw
 * iwconfig
 
+---
+
 ## M
 
 * mii-tool
 * mtr (my traceroute)
+
+---
 
 ## N
 
@@ -82,15 +100,21 @@
 * nmtui
 * nslookup
 
+---
+
 ## P
 
 * ping
 * plipconfig
 
+---
+
 ## R
 
 * rarp
 * route
+
+---
 
 ## S
 
@@ -104,14 +128,20 @@
 * ss
 * ssh
 
+---
+
 ## T
 
 * tcpdump
 * traceroute
 
+---
+
 ## U
 
 * ufw
+
+---
 
 ## W
 
@@ -121,9 +151,13 @@
 * Wireless Tools for Linux
 * wireshark
 
+---
+
 ## Source of information
 
 * [linuxblog](https://linuxblog.io/linux-networking-commands-scripts/)
+
+---
 
 ## Package utilities
 
